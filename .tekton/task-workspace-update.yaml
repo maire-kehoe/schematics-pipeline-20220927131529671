@@ -48,7 +48,8 @@ spec:
         - |
           #!/bin/bash
           
-          sleep 10
+          echo "Sleep to allow workspace repo pull latest to complete"
+          sleep 30
           echo "(mkehoe) disabled update."
           exit 0
           
