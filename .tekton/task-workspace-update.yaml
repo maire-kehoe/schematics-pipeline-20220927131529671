@@ -47,6 +47,9 @@ spec:
       args:
         - |
           #!/bin/bash
+          
+          echo "(mkehoe) changed update to do-nothing."
+          exit 0
 
           if [ "$ENABLE_PLAN_APPLY" != "true" ]; then
             echo "Automatic plan and apply have been disabled. Re-enable by setting the enable-automatic-plan-apply environment property to true."
