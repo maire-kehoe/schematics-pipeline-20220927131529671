@@ -111,12 +111,12 @@ spec:
           echo "Did update with file: "
           cat workspace.json
           
-          WORKSPACE=$(ibmcloud terraform workspace get -i $WORKSPACE_ID --json)
-          echo "Final workspace get gives: ${WORKSPACE}"
-          
-
           # cleanup
           rm -f workspace.json
 
           sleep 10
+          
+          WORKSPACE=$(ibmcloud terraform workspace get -i $WORKSPACE_ID --json)
+          echo "Final workspace get gives: ${WORKSPACE}"
+          
           unset WORKSPACE
